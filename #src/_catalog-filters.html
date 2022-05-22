@@ -1,0 +1,106 @@
+<div class="filter-catalog">
+    <div class="filter-col">
+        <div class="filter-brand">
+            <div class="btn-filter-brand">Бренд</div>
+
+            <div class="brands-filter__list">
+                <div class="custom-checkbox">
+                    <label class="active">
+                        <input type="checkbox">
+                        <span>BOSCH</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label class="">
+                        <input type="checkbox">
+                        <span>NGK</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label class="active">
+                        <input type="checkbox">
+                        <span>Электрические магистрали Санкт-Петербурга</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <span>RENAULT</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <span>Cartronic</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <span>TORCH</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <span>DENSO</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <span>ЭЗ</span>
+                    </label>
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <span>Finwhale</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <select id="delivery-filter">
+            <option value="hide">Срок доставки</option>
+            <option value="today">Доставка сегодня</option>
+            <option value="2day">Доставка до 2 дней</option>
+            <option value="5day">Доставка до 5 дней</option>
+        </select> 
+
+        <div class="filter-text">Цена (Р) от</div>
+
+        <input type="text" class="filter-input" placeholder="500">
+
+        <div class="filter-text">до</div>
+
+        <input type="text" class="filter-input" placeholder="7000">
+
+        <div class="filter-refresh" title="Очистить фильтр"></div>
+    </div>
+
+    <div class="filter-col">
+        <div class="filter-text">Показывать</div>
+        <select id="view">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select> 
+        <div class="filter-view-toggler">
+            <div class="filter-view-type1 active">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#catalog-type1"></use>
+                </svg>
+            </div>
+            <div class="filter-view-type2">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#catalog-type2"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="filter-col filter-results-list">
+        <div class="filter-result">BOSCH <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
+        <div class="filter-result">ЭЗ <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
+    </div>
+</div>

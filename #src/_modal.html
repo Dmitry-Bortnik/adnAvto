@@ -1,0 +1,162 @@
+<div class="remodal" data-remodal-id="modal-enter" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="login-modal">
+        <div class="login-modal__head flex-row">
+            <div class="login-modal__title">Вход</div>
+        </div>
+        <form action="#">
+            <div class="form-item">
+                <input type="email" required placeholder="Указанный при регистрации">
+                <label class="form-label">E-mail*</label>
+            </div>
+            <div class="form-item form-item-error">
+                <input type="password" required >
+                <label class="form-label">Пароль*</label>
+                <div class="show-pass">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#show-pass"></use>
+                    </svg>
+                </div>
+                <div class="hide-pass">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#hide-pass"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="login-form__alert">
+                Полe необходимо заполнить
+            </div>
+
+            <div class="login-form__row flex-row">
+                <button class="btn">Войти</button>
+                <a class="loging-auth" href="#" data-remodal-target="modal-reg">Зарегистрироваться</a>
+            </div>
+
+            <a class="forgot-pass" href="#" data-remodal-target="modal-forgotpass">Забыли пароль?</a>
+        </form>
+    </div>
+</div>
+
+
+<div class="remodal" data-remodal-id="modal-forgotpass" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="login-modal">
+        <div class="login-modal__head flex-row">
+            <div class="login-modal__title">Восстановление пароля</div>
+        </div>
+        <form action="#">
+            <div class="form-item">
+                <input type="email" required placeholder="Указанный при регистрации">
+                <label class="form-label">E-mail*</label>
+            </div>
+
+            <div class="login-form__row flex-row">
+                <button class="btn">Отправить пароль</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+<div class="remodal remodal-reg" data-remodal-id="modal-reg" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="login-modal">
+        <div class="login-modal__head flex-row">
+            <div class="login-modal__title">Регистрация</div>
+        </div>
+        <form action="#">
+            <div class="remodal-reg__row">
+                <div class="remodal-reg__col">
+                    <div class="form-item">
+                        <input type="email" required placeholder="В качестве логина для входа">
+                        <label class="form-label">E-mail*</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="email" required placeholder="">
+                        <label class="form-label">Контактное лицо*</label>
+                    </div>
+                    <div class="form-item form-item-error">
+                        <input type="password" required >
+                        <label class="form-label">Пароль*</label>
+                        <div class="show-pass">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#show-pass"></use>
+                            </svg>
+                        </div>
+                        <div class="hide-pass">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#hide-pass"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="remodal-reg__col">
+                    <div class="form-item">
+                        <input type="email"  placeholder="">
+                        <label class="form-label">Телефон</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="email"  placeholder="">
+                        <label class="form-label">Город</label>
+                    </div>
+                    <div class="form-item form-item-error">
+                        <input type="password" required >
+                        <label class="form-label">Повторите пароль*</label>
+                        <div class="show-pass">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#show-pass"></use>
+                            </svg>
+                        </div>
+                        <div class="hide-pass">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#hide-pass"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-form__alert">
+                Полe необходимо заполнить
+            </div>
+
+            <div class="login-form__row flex-row">
+                <button class="btn">Зарегистрироваться</button>
+                <a class="loging-auth" href="#" data-remodal-target="modal-enter">Есть профиль?</a>
+            </div>
+
+            <div class="remodal-policy">Регистрируясь, я соглашаюсь с <a href="#">политикой обработки персональных данных</a></div>
+        </form>
+    </div>
+</div>
+
+
+<!-- callback -->
+
+
+<div class="remodal" data-remodal-id="modal-callback" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="login-modal">
+        <div class="login-modal__head flex-row">
+            <div class="login-modal__title">Заказать звонок</div>
+        </div>
+        <form action="#">
+            <div class="form-item">
+                <input type="text" required placeholder=" ">
+                <label class="form-label">Ваше имя</label>
+            </div>
+            <div class="form-item">
+                <input type="text" required placeholder="+7 (___) ___-__-__">
+                <label class="form-label">Телефон*</label>
+            </div>
+
+            <div class="login-form__row flex-row">
+                <button class="btn">Заказать</button>
+            </div>
+
+            <div class="remodal-policy">Заказав звонок, я соглашаюсь с <a href="#">политикой обработки персональных данных</a></div>
+        </form>
+    </div>
+</div>
