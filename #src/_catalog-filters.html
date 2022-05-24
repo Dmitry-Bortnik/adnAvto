@@ -1,91 +1,138 @@
 <div class="filter-catalog">
     <div class="filter-col">
-        <div class="filter-brand">
-            <div class="btn-filter-brand">Бренд</div>
+        <div class="btn-filter-sort-mobile">По наименованию</div>
+        <div class="btn-filter-open-mobile">
+            <span class="btn-filter-open-mobile-num">4</span>
+        </div>
+        <div class="filter__mobile">
 
-            <div class="brands-filter__list">
-                <div class="custom-checkbox">
-                    <label class="active">
-                        <input type="checkbox">
-                        <span>BOSCH</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label class="">
-                        <input type="checkbox">
-                        <span>NGK</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label class="active">
-                        <input type="checkbox">
-                        <span>Электрические магистрали Санкт-Петербурга</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>RENAULT</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>Cartronic</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>TORCH</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>DENSO</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>ЭЗ</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>Finwhale</span>
-                    </label>
+            <h2>Фильтр <span class="filter-mobile-nom">4</span></h2>
+            <div class="modal-close"></div>
+
+            <div class="filter-brand">
+                <div class="btn-filter-brand">Бренд</div>
+
+                <div class="brands-filter__list">
+                    <div class="custom-checkbox">
+                        <label class="active">
+                            <input type="checkbox">
+                            <span>BOSCH</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label class="">
+                            <input type="checkbox">
+                            <span>NGK</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label class="active">
+                            <input type="checkbox">
+                            <span>Электрические магистрали Санкт-Петербурга</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>RENAULT</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>Cartronic</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>TORCH</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>DENSO</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>ЭЗ</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>Finwhale</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>TORCH</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>DENSO</span>
+                        </label>
+                    </div>
                 </div>
             </div>
+
+            <select id="delivery-filter">
+                <option value="hide">Срок доставки</option>
+                <option value="today">Доставка сегодня</option>
+                <option value="2day">Доставка до 2 дней</option>
+                <option value="5day">Доставка до 5 дней</option>
+            </select>
+
+            <!-- фильтр для моб версии  -->
+            <div class="delivery-mobile-filters">
+                <label class="active custom-radio">
+                    <input type="radio" name="delivery-mobile">
+                    <span>Доставка сегодня</span>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="delivery-mobile">
+                    <span>Доставка через 2 дня</span>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="delivery-mobile">
+                    <span>Доставка через 5 дней</span>
+                </label>
+            </div>
+            <!-- фильтр для моб версии  -->
+            <div class="filter-prices">
+                <div class="filter-text">Цена (Р) от</div>
+
+                <div class="filter-field">
+                    <input type="text" class="filter-input" placeholder="500">
+                    <div class="filter-field-clear"></div>
+                </div>
+                <div class="filter-text">до</div>
+                <div class="filter-field">
+                    <input type="text" class="filter-input" placeholder="7000">
+                    <div class="filter-field-clear"></div>
+                </div>
+            </div>
+            <div class="filter-mobile__footer">
+                <a class="btn" href="#">Применить</a>
+                <a class="btn-cancel" href = "javascript:void(0);">Очистить</a>
+            </div>
         </div>
-
-        <select id="delivery-filter">
-            <option value="hide">Срок доставки</option>
-            <option value="today">Доставка сегодня</option>
-            <option value="2day">Доставка до 2 дней</option>
-            <option value="5day">Доставка до 5 дней</option>
-        </select> 
-
-        <div class="filter-text">Цена (Р) от</div>
-
-        <input type="text" class="filter-input" placeholder="500">
-
-        <div class="filter-text">до</div>
-
-        <input type="text" class="filter-input" placeholder="7000">
-
         <div class="filter-refresh" title="Очистить фильтр"></div>
     </div>
 
-    <div class="filter-col">
+    <div class="filter-col filter-hidden-mobile">
         <div class="filter-text">Показывать</div>
         <select id="view">
             <option value="10">10</option>
             <option value="20">20</option>
             <option value="50">50</option>
-        </select> 
+        </select>
         <div class="filter-view-toggler">
             <div class="filter-view-type1 active">
                 <svg class="icon">
@@ -101,6 +148,44 @@
     </div>
     <div class="filter-col filter-results-list">
         <div class="filter-result">BOSCH <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
+        <div class="filter-result">Доставка сегодня <a class="filter-result-delete" title="Удалить фильтр" href="#"></a>
+        </div>
+        <div class="filter-result">Цена до 3000 рублей <a class="filter-result-delete" title="Удалить фильтр"
+                href="#"></a></div>
+        <div class="filter-result">BOSCH <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
         <div class="filter-result">ЭЗ <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
     </div>
+</div>
+
+<!-- фильтр сортировки для моб версии -->
+
+<div class="filter-sort-mobile">
+    <form action="#">
+        <div class="filter-mobile__body">
+            <h2>Сортировка</h2>
+            <div class="modal-close"></div>
+
+            <label class="active custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По наименованию</span>
+            </label>
+
+            <label class="custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По наибольшей цене</span>
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По наименьшей цене</span>
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По дате доставки</span>
+            </label>
+        </div>
+        <div class="filter-mobile__footer">
+            <a class="btn" href="#">Применить</a>
+            <a class="btn-cancel" href = "javascript:void(0);">Очистить</a>
+        </div>
+    </form>
 </div>

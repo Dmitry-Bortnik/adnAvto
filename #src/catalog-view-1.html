@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <title>ADNAVTO - Каталог вид 1</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,7 +32,7 @@
                         @@include('_catalog-filters.html')
                         <div class="catalog-view-table">
                             <div class="catalog-table">
-                                <div class="catalog-tr">
+                                <div class="catalog-tr catalog-tr-th">
                                     <div class="catalog-th"><a class="catalog-filter-to" href="#">Артикул</a></div>
                                     <div class="catalog-th">Фото</div>
                                     <div class="catalog-th"><a class="catalog-filter-to" href="#">Наименование</a></div>
@@ -45,15 +45,15 @@
                                     <div class="catalog-th">Заказ</div>
                                 </div>
                                 <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/img-catalog.jpg" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/img-catalog.jpg" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">79.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
                                         <div class="catalog-table-control">
                                             <div class="quantity-block">
                                                 <div class="quantity-arrow-minus disabled"> – </div>
@@ -67,18 +67,43 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="catalog-td">10</div>
+                                    <div class="catalog-td catalog-buy">10</div>
                                 </div>
                                 <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/img-catalog2.jpg" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/img-catalog2.jpg" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">79.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
+                                        <div class="catalog-table-control">
+                                            <div class="quantity-block">
+                                                <div class="quantity-arrow-minus disabled"> – </div>
+                                                <input class="quantity-num" type="number" value="1">
+                                                <div class="quantity-arrow-plus"> + </div>
+                                            </div>
+                                            <button class="in-basket active">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-td catalog-buy">10</div>
+                                </div>
+                                <div class="catalog-tr">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/img-catalog3.jpg" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">1 279.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
                                         <div class="catalog-table-control">
                                             <div class="quantity-block">
                                                 <div class="quantity-arrow-minus disabled"> – </div>
@@ -92,18 +117,18 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="catalog-td"> </div>
+                                    <div class="catalog-td catalog-buy"></div>
                                 </div>
                                 <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/img-catalog3.jpg" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/no-image.png" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">79.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
                                         <div class="catalog-table-control">
                                             <div class="quantity-block">
                                                 <div class="quantity-arrow-minus disabled"> – </div>
@@ -117,32 +142,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="catalog-td"> </div>
-                                </div>
-                                <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/no-image.png" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
-                                        <div class="catalog-table-control">
-                                            <div class="quantity-block">
-                                                <div class="quantity-arrow-minus disabled"> – </div>
-                                                <input class="quantity-num" type="number" value="1">
-                                                <div class="quantity-arrow-plus"> + </div>
-                                            </div>
-                                            <button class="in-basket">
-                                                <svg class="icon">
-                                                    <use xlink:href="img/sprite.svg#basket"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="catalog-td"> </div>
+                                    <div class="catalog-td catalog-buy"></div>
                                 </div>
                             </div>
                         </div>

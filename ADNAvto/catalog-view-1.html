@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <title>ADNAVTO - Каталог вид 1</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
@@ -164,11 +164,20 @@
                     <div class="header__search">
                         <form action="#">
                             <div class="header__serch-icon"></div>
-                            <input type="search" placeholder="Происк по артиклу, наименованию или коду">
+                            <input type="search" placeholder="Артикул, наименование или код">
                             <div class="header__search__clean"></div>
                             <button></button>
+                            <div class="close-mobile-button"></div>
                         </form>
                         <div class="header__search__result" style="display:none">
+                            <div class="header__search-tags">
+                                <a href="#">Свечи</a>
+                                <a href="#">Светодиодная</a>
+                                <a href="#">Сверла</a>
+                                <a href="#">Свечной</a>
+                                <a href="#">Свечи</a>
+                                <a href="#">Свечи</a>
+                            </div>
                             <div class="header__search__result__row"><span>све</span>чи зажигания</div>
                             <div class="header__search__result__row"><span>све</span>ча зажигания ngk</div>
                             <div class="header__search__result__row">фары <span>све</span>тодиодные</div>
@@ -204,6 +213,10 @@
                         
                         <div class="header__login">
                             <a class="header__enter" href="#" data-remodal-target="modal-enter">Вход</a> | <a class="header__reg" href="#" data-remodal-target="modal-reg">Регистрация</a>
+                        </div>
+
+                        <div class="header__toggle-menu-mobile">
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -324,92 +337,139 @@
                     <div class="catalog__content">
                         <div class="filter-catalog">
     <div class="filter-col">
-        <div class="filter-brand">
-            <div class="btn-filter-brand">Бренд</div>
+        <div class="btn-filter-sort-mobile">По наименованию</div>
+        <div class="btn-filter-open-mobile">
+            <span class="btn-filter-open-mobile-num">4</span>
+        </div>
+        <div class="filter__mobile">
 
-            <div class="brands-filter__list">
-                <div class="custom-checkbox">
-                    <label class="active">
-                        <input type="checkbox">
-                        <span>BOSCH</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label class="">
-                        <input type="checkbox">
-                        <span>NGK</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label class="active">
-                        <input type="checkbox">
-                        <span>Электрические магистрали Санкт-Петербурга</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>RENAULT</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>Cartronic</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>TORCH</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>DENSO</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>ЭЗ</span>
-                    </label>
-                </div>
-                <div class="custom-checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>Finwhale</span>
-                    </label>
+            <h2>Фильтр <span class="filter-mobile-nom">4</span></h2>
+            <div class="modal-close"></div>
+
+            <div class="filter-brand">
+                <div class="btn-filter-brand">Бренд</div>
+
+                <div class="brands-filter__list">
+                    <div class="custom-checkbox">
+                        <label class="active">
+                            <input type="checkbox">
+                            <span>BOSCH</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label class="">
+                            <input type="checkbox">
+                            <span>NGK</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label class="active">
+                            <input type="checkbox">
+                            <span>Электрические магистрали Санкт-Петербурга</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>RENAULT</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>Cartronic</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>TORCH</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>DENSO</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>ЭЗ</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>Finwhale</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>TORCH</span>
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>DENSO</span>
+                        </label>
+                    </div>
                 </div>
             </div>
+
+            <select id="delivery-filter">
+                <option value="hide">Срок доставки</option>
+                <option value="today">Доставка сегодня</option>
+                <option value="2day">Доставка до 2 дней</option>
+                <option value="5day">Доставка до 5 дней</option>
+            </select>
+
+            <!-- фильтр для моб версии  -->
+            <div class="delivery-mobile-filters">
+                <label class="active custom-radio">
+                    <input type="radio" name="delivery-mobile">
+                    <span>Доставка сегодня</span>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="delivery-mobile">
+                    <span>Доставка через 2 дня</span>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="delivery-mobile">
+                    <span>Доставка через 5 дней</span>
+                </label>
+            </div>
+            <!-- фильтр для моб версии  -->
+            <div class="filter-prices">
+                <div class="filter-text">Цена (Р) от</div>
+
+                <div class="filter-field">
+                    <input type="text" class="filter-input" placeholder="500">
+                    <div class="filter-field-clear"></div>
+                </div>
+                <div class="filter-text">до</div>
+                <div class="filter-field">
+                    <input type="text" class="filter-input" placeholder="7000">
+                    <div class="filter-field-clear"></div>
+                </div>
+            </div>
+            <div class="filter-mobile__footer">
+                <a class="btn" href="#">Применить</a>
+                <a class="btn-cancel" href = "javascript:void(0);">Очистить</a>
+            </div>
         </div>
-
-        <select id="delivery-filter">
-            <option value="hide">Срок доставки</option>
-            <option value="today">Доставка сегодня</option>
-            <option value="2day">Доставка до 2 дней</option>
-            <option value="5day">Доставка до 5 дней</option>
-        </select> 
-
-        <div class="filter-text">Цена (Р) от</div>
-
-        <input type="text" class="filter-input" placeholder="500">
-
-        <div class="filter-text">до</div>
-
-        <input type="text" class="filter-input" placeholder="7000">
-
         <div class="filter-refresh" title="Очистить фильтр"></div>
     </div>
 
-    <div class="filter-col">
+    <div class="filter-col filter-hidden-mobile">
         <div class="filter-text">Показывать</div>
         <select id="view">
             <option value="10">10</option>
             <option value="20">20</option>
             <option value="50">50</option>
-        </select> 
+        </select>
         <div class="filter-view-toggler">
             <div class="filter-view-type1 active">
                 <svg class="icon">
@@ -425,12 +485,50 @@
     </div>
     <div class="filter-col filter-results-list">
         <div class="filter-result">BOSCH <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
+        <div class="filter-result">Доставка сегодня <a class="filter-result-delete" title="Удалить фильтр" href="#"></a>
+        </div>
+        <div class="filter-result">Цена до 3000 рублей <a class="filter-result-delete" title="Удалить фильтр"
+                href="#"></a></div>
+        <div class="filter-result">BOSCH <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
         <div class="filter-result">ЭЗ <a class="filter-result-delete" title="Удалить фильтр" href="#"></a></div>
     </div>
 </div>
+
+<!-- фильтр сортировки для моб версии -->
+
+<div class="filter-sort-mobile">
+    <form action="#">
+        <div class="filter-mobile__body">
+            <h2>Сортировка</h2>
+            <div class="modal-close"></div>
+
+            <label class="active custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По наименованию</span>
+            </label>
+
+            <label class="custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По наибольшей цене</span>
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По наименьшей цене</span>
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="sort-mobile">
+                <span>По дате доставки</span>
+            </label>
+        </div>
+        <div class="filter-mobile__footer">
+            <a class="btn" href="#">Применить</a>
+            <a class="btn-cancel" href = "javascript:void(0);">Очистить</a>
+        </div>
+    </form>
+</div>
                         <div class="catalog-view-table">
                             <div class="catalog-table">
-                                <div class="catalog-tr">
+                                <div class="catalog-tr catalog-tr-th">
                                     <div class="catalog-th"><a class="catalog-filter-to" href="#">Артикул</a></div>
                                     <div class="catalog-th">Фото</div>
                                     <div class="catalog-th"><a class="catalog-filter-to" href="#">Наименование</a></div>
@@ -443,15 +541,15 @@
                                     <div class="catalog-th">Заказ</div>
                                 </div>
                                 <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/img-catalog.jpg" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/img-catalog.jpg" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">79.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
                                         <div class="catalog-table-control">
                                             <div class="quantity-block">
                                                 <div class="quantity-arrow-minus disabled"> – </div>
@@ -465,18 +563,43 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="catalog-td">10</div>
+                                    <div class="catalog-td catalog-buy">10</div>
                                 </div>
                                 <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/img-catalog2.jpg" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/img-catalog2.jpg" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">79.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
+                                        <div class="catalog-table-control">
+                                            <div class="quantity-block">
+                                                <div class="quantity-arrow-minus disabled"> – </div>
+                                                <input class="quantity-num" type="number" value="1">
+                                                <div class="quantity-arrow-plus"> + </div>
+                                            </div>
+                                            <button class="in-basket active">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-td catalog-buy">10</div>
+                                </div>
+                                <div class="catalog-tr">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/img-catalog3.jpg" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">1 279.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
                                         <div class="catalog-table-control">
                                             <div class="quantity-block">
                                                 <div class="quantity-arrow-minus disabled"> – </div>
@@ -490,18 +613,18 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="catalog-td"> </div>
+                                    <div class="catalog-td catalog-buy"></div>
                                 </div>
                                 <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/img-catalog3.jpg" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
+                                    <div class="catalog-td catalog-articul"><span>Арт:</span> 000179 </div>
+                                    <div class="catalog-td catalog-img"><img src="img/no-image.png" alt=""></div>
+                                    <div class="catalog-td catalog-name">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
+                                    <div class="catalog-td catalog-brand">ЭЗ</div>
+                                    <div class="catalog-td catalog-quantity"><span>Кол-во:</span> 120</div>
+                                    <div class="catalog-td catalog-quantity-name">шт.</div>
+                                    <div class="catalog-td catalog-date"><span>Срок:</span> Сегодня</div>
+                                    <div class="catalog-td catalog-price">79.31 <span>/ шт.</span></div>
+                                    <div class="catalog-td catalog-controls">
                                         <div class="catalog-table-control">
                                             <div class="quantity-block">
                                                 <div class="quantity-arrow-minus disabled"> – </div>
@@ -515,32 +638,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="catalog-td"> </div>
-                                </div>
-                                <div class="catalog-tr">
-                                    <div class="catalog-td">000179 </div>
-                                    <div class="catalog-td"><img src="img/no-image.png" alt=""></div>
-                                    <div class="catalog-td">Свеча \"ЭЗ\" А-11 (50шт/уп) Саратов</div>
-                                    <div class="catalog-td">ЭЗ</div>
-                                    <div class="catalog-td">120</div>
-                                    <div class="catalog-td">шт.</div>
-                                    <div class="catalog-td">Сегодня</div>
-                                    <div class="catalog-td">79.31</div>
-                                    <div class="catalog-td">
-                                        <div class="catalog-table-control">
-                                            <div class="quantity-block">
-                                                <div class="quantity-arrow-minus disabled"> – </div>
-                                                <input class="quantity-num" type="number" value="1">
-                                                <div class="quantity-arrow-plus"> + </div>
-                                            </div>
-                                            <button class="in-basket">
-                                                <svg class="icon">
-                                                    <use xlink:href="img/sprite.svg#basket"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="catalog-td"> </div>
+                                    <div class="catalog-td catalog-buy"></div>
                                 </div>
                             </div>
                         </div>

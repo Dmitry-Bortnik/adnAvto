@@ -92,14 +92,19 @@ $('.header__search input').on('input', function () {
     $('.header__search__clean').hide()
 })
 
+$("body").on("click", ".header__search__clean", function () {
+  $('.header__search input').val('');
+  $(this).hide();
+})
+
 $("body").on("click", ".hide-pass", function () {
-  $(this).prevAll('input').attr('type','text');
+  $(this).prevAll('input').attr('type', 'text');
   $('.show-pass').show();
   $(this).hide();
 })
 
 $("body").on("click", ".show-pass", function () {
-  $(this).prevAll('input').attr('type','password');
+  $(this).prevAll('input').attr('type', 'password');
   $('.hide-pass').show();
   $(this).hide();
 })
@@ -109,13 +114,21 @@ $('input[type="checkbox"]').on('click', function () {
   $($this).parent('label').toggleClass('active');
 });
 
+$('.custom-radio [type="radio"]').on('click', function () {
+  var $this = $(this);
+  $($this).parent('label').addClass('active');
+  $($this).parent('label').siblings().removeClass('active');
+});
 
-$(document).scroll(function() {
+
+$(document).scroll(function () {
   var y = $(this).scrollTop();
   if (y > 175) {
-    $('.header').addClass('sticky')
+    $('.header').addClass('sticky');
+    $('.main-nav.opened').addClass('fixed');
   } else {
-    $('.header').removeClass('sticky')
+    $('.header').removeClass('sticky');
+    $('.main-nav.opened').removeClass('fixed');
   }
 });
 
@@ -125,10 +138,89 @@ $("body").on("click", ".btn-filter-brand", function () {
   $(this).next().toggleClass('active');
 })
 
-$(document).click(function (e){ 
-  var div = $(".brands-filter__list"); 
+$(document).click(function (e) {
+  var div = $(".brands-filter__list");
   var itemClick = $(".btn-filter-brand");
-  if ((!div.is(e.target) && div.has(e.target).length === 0) && (!itemClick.is(e.target) && itemClick.has(e.target).length === 0)) { 
-      $( ".brands-filter__list" ).removeClass('active');
+  if ((!div.is(e.target) && div.has(e.target).length === 0) && (!itemClick.is(e.target) && itemClick.has(e.target).length === 0)) {
+    $(".brands-filter__list").removeClass('active');
   }
 });
+
+// mobile
+
+
+if ($(window).width() < 992) {
+  $('.header__catalog-lvl1 a').each(function () {
+    $(this).next('.submenu').prev().addClass('not-click').attr('href', 'javascript:void(0);');
+  })
+  $("body").on("click", ".not-click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('opened');
+  })
+  $("body").on("click", ".header__catalog-btn", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('opened');
+    $('body').toggleClass('overflow');
+  })
+
+  $("body").on("click", ".header__toggle-menu-mobile", function () {
+    $('.main-nav').toggleClass('opened')
+    $(this).toggleClass('active');
+    if ($('.header').hasClass('sticky')) {
+      $('.main-nav.opened').addClass('fixed');
+    }
+  })
+
+}
+
+
+if ($(window).width() < 480) {
+  $("body").on("click", ".header__search input", function () {
+    $('.header__search').addClass('active');
+    $('.header__search__result').show()
+  })
+
+  $("body").on("click", ".close-mobile-button", function () {
+    $('.header__search').removeClass('active');
+    $('.header__search__result').hide()
+  })
+
+}
+
+// cортировка мобильная
+
+
+$("body").on("click", ".modal-close", function () {
+  $('.filter-sort-mobile').hide();
+  $('body').removeClass('overflow');
+})
+
+$("body").on("click", ".btn-filter-sort-mobile", function () {
+  $('.filter-sort-mobile').show()
+  $('body').addClass('overflow');
+})
+
+
+$("body").on("click", ".modal-close", function () {
+  $('.filter__mobile').hide();
+  $('body').removeClass('overflow');
+})
+$("body").on("click", ".btn-filter-open-mobile", function () {
+  $('.filter__mobile').css('display','flex');
+  $('body').addClass('overflow');
+})
+
+// filter fields
+
+$('.filter-field input').on('input', function () {
+  if ($(this).val().length > 0)
+    $(this).next('.filter-field-clear').show()
+  else
+  $(this).next('.filter-field-clear').hide()
+})
+
+$("body").on("click", ".filter-field-clear", function () {
+  $(this).prev().val('');
+  $(this).hide();
+})
+
